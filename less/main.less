@@ -1,16 +1,41 @@
 @import "variables";
 
+//Mix-ins//
+.bordered {
+  border-top: solid 10px @yellow-primary;
+}
 
+
+
+//Generalized Styles//
 nav {
   height: 100px;
   background-color: @yellow-primary;
 }
 
-h1 h2 p {
+header .hero {
+  background-color: @black-secondary;
+  opacity: 33%;
+  height: @height;
+  width: @width;
+  h1 {
+    color: @gray-primary;
+  }
+}
+
+h2 p {
   color: @gray-primary;
 }
 
 button {
   background-color: @yellow-primary;
   color: @gray-primary;
+  font-weight: 500px;
+  height: 50px;
+}
+
+footer {
+  height: 200px;
+  background-color: @black-primary;
+  .bordered ()
 }
